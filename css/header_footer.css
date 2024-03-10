@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../Open_Sans/static/OpenSans-Regular.ttf");
+} 
+
+@font-face {
+    font-family: opensans;
+    font-weight: 600;
+    src: url("../Open_Sans/static/OpenSans-SemiBold.ttf");
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img {
+    width: 160px;
+    height: 50px;
+}
+
+body {
+    font-family: "opensans" Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 16px;
+}
+
+header > .container {
+    padding: 40px 20px;
+}
+
+header .container .menu a{
+    font-size: 0.875em;
+    text-decoration: none;
+    color: rgba(65, 59, 59, 0.927);
+    margin: 0 20px;
+}       
+
+header .container .menu a:hover,
+header .container .menu a.active{
+    font-weight: 600;
+    color: #ffae16;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #ffae16;
+
+}
+
+header form div {
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid #ffae16;
+    border-radius: 50px;
+    width: 320px;
+}
+
+header form div input[type="text"]{
+    border: none;
+    margin-right: 10px;
+}
+
+header form div input[type="submit"]{
+    background: url(../images/main/free-icon-search-3810856.png) no-repeat;
+    background-size: cover;
+    width: 15px;
+    border: none;
+}
+
+header form div input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+header .cart {
+    align-items: flex-start;
+}
+ 
+header .cart div p {
+    font-size: 0.938em;
+    color: rgb(76, 68, 68);
+}
+
+header .cart div a {
+    font-size: 0.750em;
+    color: #ffae16;
+}
+
+header .cart img {
+    margin: 7px;
+    width: 35px;
+    height: 35px;
+}
